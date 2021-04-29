@@ -16,8 +16,10 @@ body{
 }
 
 #userPhoto{ 
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 40px;
     /*border-radius: 50%;*/
     /*border: 5px solid var(--accentColor);*/
 }
@@ -27,13 +29,13 @@ body{
 @font-face {
 
     font-family: Teste;
-    src: url(font_1.ttf);
+    src: url(font_1.otf);
 }
 
 #fontH1{
      font-family: Teste;
-     font-size: 80px;
-     margin-bottom: -10px;
+     font-size: 50px;
+     margin-bottom: -15px;
 }
 
 #links{
