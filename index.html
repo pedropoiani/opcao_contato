@@ -18,6 +18,8 @@
   <img id="userPhoto" src="icon.png" alt="User Photo">
   <h1 id="fontH1" style="margin-bottom: 26px"> Mirai Flores</h1>
   <p style="margin-bottom: 30px;">💐Uma Floricultura Completa</p>
+
+
   <div id="links">
     <a class="link" href="https://api.whatsapp.com/send?phone=5522997517940" target="_blank"><i
         class="fa fa-whatsapp"></i> Conversar no Whatsapp</a>
@@ -29,9 +31,9 @@
       Site</a>
     <a class="link" href="https://g.page/miraiflores" target="_blank"><i class="fa fa-map-marker"></i> Nossa
       Localização</a>
-    <a class="link" href="https://chat.whatsapp.com/HPvORf4B1LF0OrWpXS05zQ" target="_blank"><i
-        class="fa fa-percent"></i> Promoções
+    <a class="link" id="myBtn" target="_blank"><i class="fa fa-percent"></i> Promoções
       Whatsapp</a>
+    <!--href="https://chat.whatsapp.com/HPvORf4B1LF0OrWpXS05zQ"-->
 
   </div>
 
@@ -77,6 +79,25 @@
   </footer>
   <!-- Rodapé -->
 
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p style="margin-top: 10px;"> Nosso grupo de Whatsapp é focado na postagem de promoções válidas até durar o
+        estoque. Somente os administradores do grupo podem realizar postagens, mantendo assim, uma melhor organização.
+      </p>
+      <p> As postagens não são diárias, mas a sua permanecia no grupo é muito importante!</p>
+      <a class="btn_wpp" href="https://chat.whatsapp.com/HPvORf4B1LF0OrWpXS05zQ" target="_blank"><i
+          class="fa fa-percent"></i> Entrar no
+        Grupo!</a>
+      <!---->
+    </div>
+
+  </div>
+  <!--Modal Fim-->
+
 </body>
 
 <!-- Javascript -->
@@ -88,6 +109,30 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 </script>
+
+<script>
+  // Obtenha o modal
+  var modal = document.getElementById("myModal");
+  // Obtenha o botão que abre o modal
+  var btn = document.getElementById("myBtn");
+  // Obtenha o elemento <span> que fecha o modal
+  var span = document.getElementsByClassName("close")[0];
+  // When the user clicks the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
 
 
 </html>
