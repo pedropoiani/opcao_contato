@@ -1,8 +1,8 @@
 /* Style Settings */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 :root {
-    --bgColor: #fff7f6!important ;
-    --accentColor: #fb6666  !important;
+    --bgColor: #143427    !important ;
+    --accentColor: #295443   !important;
     --font: 'Roboto Slab', serif;
 }
 
@@ -12,7 +12,9 @@ body{
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    background-color: var(--bgColor) !important;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #userPhoto{ 
@@ -24,15 +26,14 @@ body{
     /*border: 5px solid var(--accentColor);*/
 }
 
-
-
 @font-face {
 
     font-family: Teste;
-    src: url(font_1.otf);
+    src: url(Albertyne\ Font\ by\ Kelik\ \(7NTypes\).otf);
 }
 
 #fontH1{
+     color: #ffffff;
      font-family: Teste;
      font-size: 50px;
      margin-bottom: -15px;
@@ -41,6 +42,14 @@ body{
 #links{
     max-width: 675px;
     width: 100%;
+}
+
+
+#logotipo {
+
+  border-radius: 5%;
+  margin-bottom: 8%; 
+
 }
 
 
@@ -92,7 +101,7 @@ color: #fff7f6;
       }
 
       #social-media a{
-          color: #6b6b6b;
+          color: #ffffff;
       }
 
       #social-media ul li a {
