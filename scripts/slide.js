@@ -31,6 +31,16 @@ function nextImage(){
         }
 }
 
+function resize(){
+    if(window.innerWidth > 450){
+        smallImage[0].classList.remove('selected')
+        bigImage[0].classList.add('selected')
+    } else{
+        bigImage[0].classList.remove('selected')
+        smallImage[0].classList.add('selected')
+    }
+}
+
 function start(){
     if(window.innerWidth > 450){
         bigImage[0].classList.add('selected')
@@ -41,6 +51,7 @@ function start(){
         nextImage()
     }, time)
 }
-
+    window.addEventListener('resize', resize)
     window.addEventListener("load", start)
+
     
