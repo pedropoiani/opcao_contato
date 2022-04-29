@@ -32,6 +32,11 @@ function nextImage(){
 }
 
 function start(){
+    if(window.innerWidth > 450){
+        bigImage[0].classList.add('selected')
+    } else{
+        smallImage[0].classList.add('selected')
+    }
     setInterval(()=>{
         nextImage()
     }, time)
