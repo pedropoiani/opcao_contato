@@ -12,9 +12,54 @@ body{
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(background.png);
+    background-image: url(./assets/images/background.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;   
+}
+
+header{
+  width: 100%;
+  height: 300px;
+  display: flex;
+
+}
+
+header .slider{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  max-height: 300px;
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0;
+  border-radius: 5px;
+  position: absolute;
+}
+.slider img.selected{
+  opacity: 1;
+}
+
+
+.company-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.company-info img{
+  width:80px;
+  height:80px;
+  margin-left: 15px;
 }
 
 #userPhoto{ 
@@ -29,7 +74,7 @@ body{
 @font-face {
 
     font-family: Teste;
-    src: url(Albertyne\ Font\ by\ Kelik\ \(7NTypes\).otf);
+    src: url(./assets/fonts/Albertyne\ Font\ by\ Kelik\ \(7NTypes\).otf);
 }
 
 #fontH1{
@@ -162,3 +207,16 @@ color: #fff7f6;
         cursor: pointer;
       }
 
+  @media (max-width:500px){
+      header{
+        height: 200px;
+      }
+      header .slider{
+        max-width: 100%;
+        height: 200px;
+        
+      }
+      .slider img{
+        height: 200px;
+      }
+      }
