@@ -1,4 +1,4 @@
-let time = 2000; //--> Tempo de transição das imagens em milisegundos
+let time = 5000; //--> Tempo de transição das imagens em milisegundos
 //-> Imagens grandes e pequenas
 const bigImage = document.getElementsByClassName("big-image")
 const numberOfBigImages = bigImage.length
