@@ -1,225 +1,225 @@
-/* Style Settings */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
-:root {
-    --bgColor: #143427    !important ;
-    --accentColor: #295443   !important;
-    --font: 'Roboto Slab', serif;
-}
-
-body{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url(./assets/images/background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;   
-}
-
-header{
-  width: 100%;
-  height: 300px;
-  display: flex;
-
-}
-
-header .slider{
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  max-width: 800px;
-  max-height: 300px;
-  position: relative;
-  margin-top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.slider img{
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  opacity: 0;
-  border-radius: 5px;
-  position: absolute;
-}
-.slider img.selected{
-  opacity: 1;
-}
-
-
-.company-info{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.company-info img{
-  width:80px;
-  height:80px;
-  margin-left: 15px;
-}
-
-#userPhoto{ 
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    /*border-radius: 50%;*/
-    /*border: 5px solid var(--accentColor);*/
-}
-
-@font-face {
-
-    font-family: Teste;
-    src: url(./assets/fonts/Albertyne\ Font\ by\ Kelik\ \(7NTypes\).otf);
-}
-
-#fontH1{
-     color: #ffffff;
-     font-family: Teste;
-     font-size: 50px;
-     margin-bottom: -15px;
-}
-
-#links{
-    max-width: 675px;
-    width: 100%;
-}
-
-
-#logotipo {
-
-  border-radius: 5%;
-  margin-bottom: 8%; 
-
-}
-
-
-.link{
-    display: block;
-    background-color: var(--accentColor);
-    color: white;
-    font-family: var(--font);
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 13px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all .25s cubic-bezier(.08,.59,.29,.99);
-    border: solid var(--accentColor) 2px;
-    border-radius: 50px;
-}
-
-.link:hover{
-    background-color: #fff7f6;
-    color: var(--accentColor);
-    }
-
-
-.btn_wpp{
-
-    background-color: #4fce5d;
-    font-family: var(--font);
-    color: white;
-    text-align: center;
-    border-radius: 50px;
-    padding: 13px;
-    text-decoration: none;
-    font-size: 1rem;
-    
-}
-
-.btn_wpp:hover{
-
-color: #fff7f6;
-
-}
-
-	/* Social Media */ 
-    #social-media ul li {
-        display: inline-block;
-        font-size: 30px;
-        margin: 0 10px;
-      }
-
-      #social-media a{
-          color: #ffffff;
-      }
-
-      #social-media ul li a {
-        transition: all 0.8s !important;
-      }
-    
-      #social-media ul li a:hover {
-        opacity: 0.8 !important;
-        
-      }
-
-          /* The Modal */
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        padding-top: 100px;
-        /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-      }
-  
-      /* Modal Content */
-      .modal-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80% !important;
-        height: auto;
-      }
-  
-      /* The Close Button */
-      .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-  
-      .close:hover,
-      .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-
-  @media (max-width:500px){
-      header{
-        width: 100%;
-        height: 350px;
-      }
-      header .slider{
-        max-width: 100%;
-        height: 200px;
-        
-      }
-      .slider img{
-        height: 350px;
-        object-fit: fill;
-      }
-      }
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+:root {
+    --bgColor: #143427    !important ;
+    --accentColor: #295443   !important;
+    --font: 'Roboto Slab', serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(./assets/images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+
+header{
+  width: 100%;
+  height: 300px;
+  display: flex;
+
+}
+
+header .slider{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+  max-height: 300px;
+  position: relative;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0;
+  border-radius: 5px;
+  position: absolute;
+}
+.slider img.selected{
+  opacity: 1;
+}
+
+
+.company-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.company-info img{
+  width:80px;
+  height:80px;
+  margin-left: 15px;
+}
+
+#userPhoto{ 
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    /*border-radius: 50%;*/
+    /*border: 5px solid var(--accentColor);*/
+}
+
+@font-face {
+
+    font-family: Teste;
+    src: url(./assets/fonts/Albertyne\ Font\ by\ Kelik\ \(7NTypes\).otf);
+}
+
+#fontH1{
+     color: #ffffff;
+     font-family: Teste;
+     font-size: 50px;
+     margin-bottom: -15px;
+}
+
+#links{
+    max-width: 675px;
+    width: 100%;
+}
+
+
+#logotipo {
+
+  border-radius: 5%;
+  margin-bottom: 8%; 
+
+}
+
+
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: white;
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 13px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+    border-radius: 50px;
+}
+
+.link:hover{
+    background-color: #fff7f6;
+    color: var(--accentColor);
+    }
+
+
+.btn_wpp{
+
+    background-color: #4fce5d;
+    font-family: var(--font);
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    padding: 13px;
+    text-decoration: none;
+    font-size: 1rem;
+    
+}
+
+.btn_wpp:hover{
+
+color: #fff7f6;
+
+}
+
+	/* Social Media */ 
+    #social-media ul li {
+        display: inline-block;
+        font-size: 30px;
+        margin: 0 10px;
+      }
+
+      #social-media a{
+          color: #ffffff;
+      }
+
+      #social-media ul li a {
+        transition: all 0.8s !important;
+      }
+    
+      #social-media ul li a:hover {
+        opacity: 0.8 !important;
+        
+      }
+
+          /* The Modal */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+      }
+  
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80% !important;
+        height: auto;
+      }
+  
+      /* The Close Button */
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+  
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+
+  @media (max-width:500px){
+      header{
+        width: 100%;
+        height: 350px;
+      }
+      header .slider{
+        max-width: 100%;
+        height: 200px;
+        
+      }
+      .slider img{
+        height: 350px;
+        object-fit: fill;
+      }
+      }
